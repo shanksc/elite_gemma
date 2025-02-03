@@ -4,9 +4,7 @@
 
 ### **1. Quality Control Filters (Applied to Controls Only)**
 - Hardy-Weinberg Equilibrium (HWE): Variants with HWE p-value < 1e-6 in controls were removed.
-- Minor Allele Frequency (MAF): Variants with MAF < 1% in controls were removed.
 - Genotyping Missingness: Variants with genotyping missingness >1% in controls were removed.
-- Relatedness Filtering: Second-degree related individuals in athletes and controls were removed using KING.
 
 ### **2. Liftover to hg38**
 - Converted variant coordinates from hg19 to hg38 using `bcftools liftover`.
@@ -19,7 +17,7 @@
 - Uploaded filtered variants to the TopMed Imputation Server for imputation and phasing.
 - Post-imputation filtering:
   - Retained variants with INFO > 0.3.
-  - Applied MAF > 1% filter in controls again.
+  - Applied MAF > 1% filter in controls
 
 ## Association Analysis with GEMMA
 - See gemma bash scripts for example
