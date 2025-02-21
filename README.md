@@ -24,8 +24,5 @@
 - Binary phenotypes where:
   - `1 = elite athlete (case)`
   - `0 = control`
-- Sex encoded as:
-  - `0 = Unkown`
-  - `1 = Male`
-  - `2 = Female`
+- Sex is one hot encoded
 
